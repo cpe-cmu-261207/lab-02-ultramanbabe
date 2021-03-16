@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GPA Calculator</title>
+        <style>
+            body{
+                background-color: gray;
+            }
+            
+            .h1{
+                text-align: center;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <center><table style="width: 80%;height: 50px;border: 2px solid black;margin: 5px;text-align: center; ">
+            <tr>
+                <td><a href="Home.html">Home</a></td>
+                <td><a href="Gallery.html">Gallery</a></td>
+                <td><a href="Contact.html">Contact</a></td>
+                <td><a href="GPA.html">GPA Calculator</a></td>
+            </tr>
+        </table></center>
+    <h1 class="h1">GPA</h1>
+    <form id="menu">
+    <table>
+        <tr>
+            <td>Subject</td>
+            <td>Subject ID</td>
+            <td>Grade</td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="Subject" id="subject" placeholder="Subject"></td>
+            <td><input type="text" name="SubjectID" id="sid" placeholder="ID"></td>
+            <td>
+                <select name="grades" id="grade">
+                    <optgroup>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </optgroup>
+                </select>
+            </td>
+            <p id="SemSelect">
+                <td>
+                    <input type="radio" name="SemSelect" id="sem1" value="sem1">
+                    <label for="sem1">Semester 1</label>
+                </td>
+                <td>
+                    <input type="radio" name="SemSelect" id="sem2" value="sem2">
+                    <label for="sem2">Semester 2</label>
+                </td>
+            </p>
+            <td><input type="submit" id="addbutton" value="Add"></td>
+        </tr>
+    </table></form>
+
+    <table>
+        <tr>
+            <td>
+                <h2>First Semester</h2>
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <td>Subject</td>
+                                <td>Subject ID</td>
+                                <td>Grade</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tableinfo">
+
+                        </tbody>
+                    </table>
+            </td>
+            <td>
+                <h2>Second Semester</h2>
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <td>Subject</td>
+                                <td>Subject ID</td>
+                                <td>Grade</td>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tableinfo2">
+
+                        </tbody>
+                    </table>
+            </td>  
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <h3>Major Grade</h3>
+            </td>
+            <td id="MJGrade"></td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Semester 1 Grade</h3>
+            </td>
+            <td id="Sem1Grade"></td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Semester 2 Grade</h3>
+            </td>
+            <td id="Sem2Grade">
+
+            </td>
+        </tr>
+    </table>
+
+    <script src="gpa.js"></script>
+    </body>
+</html>
